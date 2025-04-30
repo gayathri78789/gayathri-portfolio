@@ -4,11 +4,11 @@ import {
   FileCode, 
   Brush, 
   FileText,
-  Html,
-  Css,
-  Javascript,
-  Java,
-  Python
+  Globe,
+  Palette,
+  CodeIcon,
+  Coffee,
+  Terminal
 } from "lucide-react";
 
 const SkillCard = ({ 
@@ -50,31 +50,31 @@ const Skills = () => {
       title: "HTML",
       description: "Proficient in creating structured, semantic markup for web pages.",
       proficiency: 75,
-      icon: Html
+      icon: Globe
     },
     {
       title: "CSS",
       description: "Able to style web pages with responsive and attractive designs.",
       proficiency: 70,
-      icon: Css
+      icon: Palette
     },
     {
       title: "JavaScript",
       description: "Understanding of core concepts for dynamic web functionality.",
       proficiency: 65,
-      icon: Javascript
+      icon: CodeIcon
     },
     {
       title: "Java",
       description: "Familiar with object-oriented programming principles in Java.",
       proficiency: 60,
-      icon: Java
+      icon: Coffee
     },
     {
       title: "Python",
       description: "Basic knowledge of Python syntax and programming concepts.",
       proficiency: 55,
-      icon: Python
+      icon: Terminal
     },
     {
       title: "Documentation",
