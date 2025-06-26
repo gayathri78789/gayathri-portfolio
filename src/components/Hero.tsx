@@ -28,9 +28,9 @@ const Hero = () => {
       <div className="absolute bottom-20 left-10 w-40 h-40 rounded-full bg-portfolio-teal opacity-10 blur-2xl"></div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-16">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <div 
-            className={`flex-1 transition-all duration-1000 transform ${
+            className={`transition-all duration-1000 transform ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
@@ -45,22 +45,22 @@ const Hero = () => {
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-portfolio-neutral mb-8 max-w-lg">
+            <p className="text-lg md:text-xl text-portfolio-neutral mb-8 max-w-2xl mx-auto">
               A Computer Science Engineering student with a passion for exploring new technologies and building innovative solutions.
             </p>
             
-            <div className="space-y-3 mb-8 backdrop-blur-sm bg-white/30 p-4 rounded-lg border border-gray-100 shadow-sm">
-              <p className="text-portfolio-neutral-medium flex items-center gap-2">
+            <div className="space-y-3 mb-8 backdrop-blur-sm bg-white/30 p-6 rounded-lg border border-gray-100 shadow-sm max-w-xl mx-auto">
+              <p className="text-portfolio-neutral-medium flex items-center justify-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-portfolio-teal inline-block"></span>
                 Second-year B.Tech at VSM College of Engineering
               </p>
-              <p className="text-portfolio-neutral-medium flex items-center gap-2">
+              <p className="text-portfolio-neutral-medium flex items-center justify-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-portfolio-teal inline-block"></span>
                 Specializing in HTML, CSS, JavaScript, Java, Python
               </p>
             </div>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center">
               <Button className="bg-portfolio-teal hover:bg-portfolio-teal/90 shadow-lg hover:shadow-xl transition-all">
                 <a href="#contact" className="px-2">Contact Me</a>
               </Button>
@@ -70,25 +70,6 @@ const Hero = () => {
               >
                 <a href="#about" className="px-2">Learn More</a>
               </Button>
-            </div>
-          </div>
-          
-          <div className={`flex-1 flex justify-center md:justify-end transition-all duration-1000 transform ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}>
-            <div className="relative">
-              {/* Main profile image with enhanced styling */}
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-portfolio-teal-light shadow-2xl relative z-10">
-                <img 
-                  src="/public/lovable-uploads/0ea2a605-ff6e-45a7-b4ed-2aed5e93aa54.png" 
-                  alt="Profile of Gayathri" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              
-              {/* Decorative elements behind the image */}
-              <div className="absolute -bottom-4 -right-4 w-full h-full rounded-full bg-portfolio-teal-light opacity-30 z-0"></div>
-              <div className="absolute -top-4 -left-4 w-full h-full rounded-full border-4 border-dashed border-portfolio-teal opacity-20 z-0"></div>
             </div>
           </div>
         </div>
